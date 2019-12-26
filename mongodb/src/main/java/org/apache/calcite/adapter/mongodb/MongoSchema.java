@@ -45,8 +45,7 @@ public class MongoSchema extends AbstractSchema {
    * @param options Mongo connection options
    * @param database Mongo database name, e.g. "foodmart"
    */
-  MongoSchema(String host, String database,
-      MongoCredential credential, MongoClientOptions options) {
+  MongoSchema(String host, String database, MongoCredential credential, MongoClientOptions options) {
     super();
     try {
       final MongoClient mongo = credential == null
